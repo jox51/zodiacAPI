@@ -1,8 +1,5 @@
-from flask import Flask, request, jsonify
 from fastapi import FastAPI
-from src.lunisolar.lunisolar import ChineseDate
-import sys
-sys.path.append('../server/src')
+from lunisolar import ChineseDate
 
 app = FastAPI()
 
